@@ -66,6 +66,16 @@
   color: white;
   font-size: 1.2rem;
 }
+.tab-header{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.small-btn{
+  font-size: 1rem;
+    padding: .5rem;
+
+}
 .btn:hover {
   background-color: #4b46c2;
   transition: ease-in 0.2s;
@@ -243,6 +253,7 @@ h6{
 .code_renderer{
   display: flex;
   flex-direction: column;
+  max-height: 500px;
 }
 
 .code_renderer button {
@@ -250,6 +261,10 @@ h6{
  display: block;
  width: 5rem;
 
+}
+.preview-container{
+  width: 70vw;
+  overflow: hidden;
 }
 
 /* Responsive for intro */

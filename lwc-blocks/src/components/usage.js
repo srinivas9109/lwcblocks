@@ -1,12 +1,13 @@
-import React  from 'react';
-import CodeRenderer from './codeRenderer';
+import React,{useEffect}  from 'react';
+import Tabs from './tabs';
+import {USAGE_TEXT} from '../utils/usageText';
+import Loader from './preview/loader/loader';
 
 const Usage = () => {
-    const html = `<div c;ass='ocks-container">
-  <lwc-blocks-toast-message type="success" message="This is a success message"></lwc-blocks-toast-message>
-  <lwc-blocks-toast-message type="warning" message="This is a warning message"></lwc-blocks-toast-message>
-  <lwc-blocks-toast-message type="error" message="This is an error message"></lwc-blocks-toast-message>
-</div>`;
+    useEffect(() => {
+       console.log('USAGE_TEXT', USAGE_TEXT);
+       
+    }, []);
 
     return (
         <div className="intro-container">
@@ -26,21 +27,24 @@ const Usage = () => {
 
                 <br />
                 Whether you're a Salesforce developer looking to speed up your UI work or just exploring reusable web components, LWC Blocks is designed to save you time and help you build beautiful, functional interfaces faster.
-                <br /><br />
-                <strong>Why LWC Blocks?</strong>
-                <ul style={{ textAlign: 'left', margin: '1rem auto', color: '#334155', lineHeight: '1.7' }}>
-                    <li>🚀 <b>Accelerate Development:</b> Reduce repetitive work and focus on building features.</li>
-                    <li>🔗 <b>Easy Integration:</b> Copy code or download ZIPs for instant use in your Salesforce org.</li>
-                    <li>🛠️ <b>Customizable:</b> All components are built with clean CSS, HTML, and JS for easy customization.</li>
-                    <li>📚 <b>Learning Resource:</b> See best practices and patterns for LWC development.</li>
-                </ul>
+               
                 <br />
             </p>
-        <CodeRenderer code={html} language="html" />'
+
+         <h4 >Preview</h4>
+         <div className="preview-container">
+         <Loader />
+
+            </div>
+
+         <h5>Parent LWC Component</h5>
+         <Tabs content={USAGE_TEXT.parent} />
+
+          <h5>Resuable LWC Component</h5>
+         <Tabs content={USAGE_TEXT.child} />
 
         </div>
-        //     <div className="lwc-blocks-container">
-        //     </div>
+
     );
 };
 
