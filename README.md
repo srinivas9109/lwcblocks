@@ -1,4 +1,4 @@
-LWC Blocks site : https://lwcblocks.netlify.app/
+LWC Blocks site : https://lwcblocks.netlify.app/ <br />
 LWc Blocks offers a collection of reusable components that can be easily integrated into your projects, saving you time and effort.
 (LWC's) - built with pure HTML, CSS, and JavaScript.
 Np framework. No clutter. Just clean code you can :
