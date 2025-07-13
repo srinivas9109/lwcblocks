@@ -103,14 +103,14 @@ h6{
 .components{
   width: 98vw;
   margin: 0 auto;
-  height: 90vh;
+  min-height: 90vh;
   background-color: aliceblue;
   border-radius: .5rem
 }
 
 .components-container {
   display: flex;
-  height: 90vh;
+  min-height: 90vh;
   width: 98vw;
   margin: 0 auto;
   background: #f8fafc;
