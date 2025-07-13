@@ -58,7 +58,7 @@ function Components() {
             case 'usage':
                 return <Usage />;
             case 'button':
-                return <Tabs />;
+                return <h1>Button content</h1>;
             case 'buttonGroup':
                 return <div>Inputs content</div>;
             case 'grid':
