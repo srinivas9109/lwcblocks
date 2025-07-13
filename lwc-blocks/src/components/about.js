@@ -6,8 +6,6 @@ const About = () => {
     <div>
       <h1>About Us</h1>
 
-      <img src={logo} alt="Logo"  />
-      {/* Add more about content here if needed */}
     </div>
   );
 };

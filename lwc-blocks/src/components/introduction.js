@@ -4,7 +4,7 @@ function Introduction() {
   return (
     <div className="intro-container">
       <h1 className="intro-title">Welcome to LWC Blocks</h1>
-      <p className="intro-desc">
+      <div className="intro-desc">
         LWC Blocks is your hub for reusable Lightning Web Components (LWC) built with CSS, HTML, and JavaScript.
         <br /><br />
         <strong>What you'll find here:</strong>
@@ -26,10 +26,10 @@ function Introduction() {
           <li>📚 <b>Learning Resource:</b> See best practices and patterns for LWC development.</li>
         </ul>
         <br />
-      </p>
+      </div>
       <div className="intro-meta">
         <div className="intro-author">
-          <span className="intro-label">Site started:</span> <span>Today</span>
+          <span className="intro-label">Site started:</span> <span>July 13 2025</span>
         </div>
         <div className="intro-author">
           <span className="intro-label">UI Developer:</span> <span>Srinivas</span>
