@@ -20,7 +20,6 @@
     display: flex;
     flex-wrap: wrap !important;
     gap: 1rem;
-    padding: 1rem;
     justify-content: center;
     align-items: center;
     width: 70vw;
