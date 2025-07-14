@@ -9,7 +9,7 @@ const About = () => {
         <br /><br />
         <strong>🚀 Our Mission:</strong>
         <p className='left'>Our mission is to make Lightning Web Component development:</p>
-        <ul style={{ textAlign: 'left', margin: '1rem auto', color: '#334155', lineHeight: '1.7' }}>
+        <ul className='ul_block'>
           <li>✨ <b>Faster</b></li>
           <li>✨ <b>Cleaner</b></li>
           <li>✨ <b>More accessible to everyone — from beginners to experts</b></li>
@@ -21,7 +21,7 @@ const About = () => {
         <strong>🔍 What You’ll Find on LWC Blocks:</strong>
         <p className='left'>LWC Blocks offers a wide range of components built using pure HTML, CSS and JS.Every block is built with real-world use cases in mind.</p>
         <p className='left'><strong>All blocks are:</strong></p>
-        <ul style={{ textAlign: 'left', margin: '1rem auto', color: '#334155', lineHeight: '1.7' }}>
+        <ul className='ul_block'>
           <li> <b>🔧 Plug-and-play</b></li>
           <li><b>🧩 Customizable</b></li>
           <li><b>💻 Developer-friendly</b></li>
@@ -32,7 +32,7 @@ const About = () => {
         <p className='left'>LWC Blocks is built and maintained by a Salesforce developer passionate about simplifying front-end development within the Salesforce ecosystem.</p>
         <p className='left'>This project started as a personal developer toolkit, but it’s now shared openly to help the Salesforce dev community grow.</p>
       </div>
-      <div className="intro-meta" style={{ marginBottom:'2rem'}}>
+      <div className="intro-meta" style={{ marginBottom: '2rem' }}>
         <div className="intro-author">
           <span className="intro-label">Site started:</span> <span>July 13 2025</span>
         </div>
