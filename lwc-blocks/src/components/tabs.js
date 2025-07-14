@@ -74,7 +74,6 @@ const styles = {
     fontWeight: '700',
   },
   contentContainer: {
-    padding: '20px',
     fontFamily: 'Arial, sans-serif',
     color: '#333',
   },

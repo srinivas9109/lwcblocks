@@ -64,3 +64,14 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+@media (max-width: 600px) {
+   .flex-container {
+    width: 90vw;
+} 
+}
+@media (max-width: 900px) {
+       .flex-container {
+    width: 90vw;
+} 
+}
