@@ -118,6 +118,13 @@ h6 {
   background-color: aliceblue;
   border-radius: .5rem
 }
+ .about-container {
+  width: 96w !important;
+  margin: 0 auto !important;
+  min-height: 90vh !important;
+  background-color: aliceblue !important;
+  border-radius: .5rem !important;
+}
 
 .components-container {
   display: flex;
@@ -281,6 +288,10 @@ h6 {
 .preview-container {
   width: 70vw;
   overflow: hidden;
+}
+.left{
+  text-align: left;
+  margin: 1rem;
 }
 
 /* Responsive for intro */
