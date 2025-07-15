@@ -7,9 +7,9 @@ function Home() {
     const navigate = useNavigate();
     return (
         <div className="home">
-            <div className="home-content">
+            <div className="home-content home-desc">
                 <img src={brand} alt="Logo" />
-                <h1>{STATIC_TEXT.homeHeading}</h1>
+                <h1 className='heading'>{STATIC_TEXT.homeHeading}</h1>
                 <h3>{STATIC_TEXT.slogan}</h3>
                 <button className="btn" onClick={() => navigate('/components')}>Discover Reusable LWC's</button>
             </div>

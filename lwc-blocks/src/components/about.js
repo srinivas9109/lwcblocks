@@ -27,6 +27,7 @@ const About = () => {
           <li><b>💻 Developer-friendly</b></li>
           <li><b>📱 Responsive by default</b></li>
         </ul>
+        <hr />
         <br />
         <strong>👨‍💻 Who’s Behind This?</strong>
         <p className='left'>LWC Blocks is built and maintained by a Salesforce developer passionate about simplifying front-end development within the Salesforce ecosystem.</p>

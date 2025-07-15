@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import '../app.css'; // Make sure this import exists
 import brand from '../assets/brandLogo.png';
 import Home from './home';
 import About from './about';
