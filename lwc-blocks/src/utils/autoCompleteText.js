@@ -117,7 +117,7 @@ export default class AutoCompleteDemo extends LightningElement {
     },
     child: {
         HTML: `
-        <template>
+<template>
     <div class="auto-complete-container">
         <div class="slds-form-element">
             <label if:true={label} class="slds-form-element__label" for="autocomplete-input">
@@ -208,6 +208,7 @@ export default class AutoCompleteDemo extends LightningElement {
         </div>
     </div>
 </template>
+       
 `,
         JS: `import { LightningElement, api, track } from 'lwc';
 
@@ -752,7 +753,7 @@ export default class ReusableAutoCompleteInput extends LightningElement {
     </targetConfigs>
 </LightningComponentBundle>`,
     },
- 
+
 }
 
 export { AUTO_COMPLETE_TEXT };
