@@ -234,12 +234,6 @@ export default class ReusableAutoCompleteInput extends LightningElement {
     // Add property to track if user is clicking on an option
     _isSelectingOption = false;
 
-    connectedCallback() {
-        console.log('AutoComplete component connected');
-        console.log('Initial options:', this.options);
-        console.log('Display field:', this.displayField);
-        console.log('Value field:', this.valueField);
-    }
 
     get inputClass() {
         let baseClass = 'slds-combobox__input slds-input';
