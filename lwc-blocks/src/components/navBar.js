@@ -35,7 +35,10 @@ const NavBar = () => {
   return (
     <Router>
       <nav className="navbar">
+        <div className="nav-title">
         <img src={brand} alt="Logo" id='brand'  />
+
+        </div>
         <NavLinks />
       </nav>
       <div className="content">
