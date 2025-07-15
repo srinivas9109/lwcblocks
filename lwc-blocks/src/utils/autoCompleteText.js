@@ -747,6 +747,45 @@ export default class ReusableAutoCompleteInput extends LightningElement {
     </targetConfigs>
 </LightningComponentBundle>`,
     },
+    doc:`
+Core Components
+1. Input Field: Main search input with placeholder and validation
+2. Dropdown List: Filtered options display with scrolling
+3. Option Items: Individual selectable items with descriptions
+4. Clear Button: Removes current selection
+5. No Results Message: Displayed when no matches found
+
+State Management
+The component uses Lightning's reactive properties to manage:
+searchTerm - Current input value
+filteredOptions - Processed and filtered option list
+selectedOption - Currently selected item
+isDropdownOpen - Dropdown visibility state
+highlightedIndex - Keyboard navigation position
+
+Public Properties (@api)
+
+Property        | Type    | Default             | Description 
+label           | String  | Search              | Label text displayed above the input field 
+placeholder     | String  | Type to search...   | Placeholder text shown in empty input 
+options         | Array   | []                  | Array of objects containing searchable data 
+displayField    | String  | label               | Object property to display in dropdown 
+valueField      | String  | value               | Object property to use as unique identifier 
+variant         | String  | standard            | Visual variant (standard, label-hidden) 
+disabled        | Boolean | false               | Disables the entire component 
+required        | Boolean | false               | Marks field as required with red asterisk 
+maxResults      | Number  | 10                  | Maximum number of options to display 
+minSearchLength | Number  | 2                   | Minimum characters needed to trigger search 
+
+Option Object Structure
+javascript
+ {
+     label: String,        // Required: Display text
+     value: String|Number, // Required: Unique identifier
+     description: String   // Optional: Additional descriptive text
+ }
+ 
+    `
 
 }
 

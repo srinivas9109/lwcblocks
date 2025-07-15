@@ -16,13 +16,13 @@ const Tabs = ({content}) => {
     
     switch (activeTab) {
       case 'html':
-        return    <CodeRenderer code={content.HTML} language="html" />;
+        return    <CodeRenderer code={content.HTML} language="html" mode='dark'copy='true' />;
       case 'js':
-        return <CodeRenderer code={content.JS} language="js" />;
+        return <CodeRenderer code={content.JS} language="js" mode='dark'copy='true' />;
       case 'css':
-        return <CodeRenderer code={content.CSS} language="css" />;
+        return <CodeRenderer code={content.CSS} language="css" mode='dark'copy='true' />;
       case 'meta':
-        return <CodeRenderer code={content.META} language="meta" />;
+        return <CodeRenderer code={content.META} language="meta" mode='dark' copy='true'/>;
       default:
         return null;
     }

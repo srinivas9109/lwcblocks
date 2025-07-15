@@ -1,6 +1,7 @@
 import React from 'react';
 import { AUTO_COMPLETE_TEXT } from '../../utils/autoCompleteText';
 import Tabs from '../tabs';
+import CodeRenderer from '../codeRenderer';
 
 // import Loader from './preview/loader/loader';
 
@@ -37,12 +38,16 @@ This AutoComplete component provides a complete, enterprise-grade solution that'
 
           */}
           
-         <h5>Parent LWC Component</h5>
+         <h4>Parent LWC Component</h4>
          <Tabs content={AUTO_COMPLETE_TEXT.parent} />
 
           <h5>Resuable LWC Component</h5>
          <Tabs content={AUTO_COMPLETE_TEXT.child} />
-         
+
+         <h4>Documentation</h4>
+
+
+         <CodeRenderer code={AUTO_COMPLETE_TEXT.doc} language="text" />
 
         </div>
 
