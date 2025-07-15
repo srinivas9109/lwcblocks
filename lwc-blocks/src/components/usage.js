@@ -1,13 +1,9 @@
-import React,{useEffect}  from 'react';
+import React  from 'react';
 import Tabs from './tabs';
 import {USAGE_TEXT} from '../utils/usageText';
 import Loader from './preview/loader/loader';
 
 const Usage = () => {
-    useEffect(() => {
-       console.log('USAGE_TEXT', USAGE_TEXT);
-       
-    }, []);
 
     return (
         <div className="intro-container ">

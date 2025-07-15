@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Introduction from './introduction';
 import Usage from './usage';
-import Tabs from './tabs';
+// import Tabs from './tabs';
+import AutoComplete from './reUsable/autoComplete';
 
 const TAB_DATA = [
     {
@@ -16,14 +17,19 @@ const TAB_DATA = [
         key: 'inputs',
         label: 'INPUTS',
         children: [
-            { key: 'button', label: 'Button' },
-            { key: 'buttonGroup', label: 'Button Group' },
+            { key: 'autoComplete', label: 'Auto Complete' },
             { key: 'checkbox', label: 'Checkbox' },
-            { key: 'radipGroup', label: 'Radio Group' },
-            { key: 'rating', label: 'Rating' },
+            { key: 'radio', label: 'Radio' },
             { key: 'select', label: 'Select' },
-            { key: 'multiSelect', label: 'Multi Select' },
-			{ key: 'toogle', label: 'Toogle' },
+            { key: 'switch', label: 'Switch' },
+            { key: 'textInput', label: 'Text Input' },
+            { key: 'textarea', label: 'Textarea' },
+            { key: 'fileInput', label: 'File Input' },
+            { key: 'datePicker', label: 'Date Picker' },
+            { key: 'timePicker', label: 'Time Picker' },
+            { key: 'numberInput', label: 'Number Input' },
+            { key: 'colorPicker', label: 'Color Picker' },
+            { key: 'rangeSlider', label: 'Range Slider' },
 
         ],
     },
@@ -57,16 +63,11 @@ function Components() {
                 return <Introduction />;
             case 'usage':
                 return <Usage />;
-            case 'button':
-                return <h1>Button content</h1>;
-            case 'buttonGroup':
-                return <div>Inputs content</div>;
-            case 'grid':
-                return <div>Grid content</div>;
-            case 'flex':
+            case 'autoComplete':
+                return <AutoComplete />;
                 return <div>Flex content</div>;
             default:
-                return <div>Select a component</div>;
+                return <div>Will be released soon .......</div>;
         }
     };
 
